@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+    
+    body {
+        background-color: #f0fff9;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        padding: 20px;
+    }
+
+    h1 {
+
+        font-size: 2.2rem;
+        color: #00897b;
+        font-weight: 700;
+    }
+
+    p.main-subtitle {
+        color: #6c757d;
+        margin-bottom: 25px;
+    }
+
+    .profile-card {
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 4px 4px 15px rgba(197, 240, 239, 0.918);
+        padding: 30px;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-card table {
+        width: 100%;
+        margin: 0 auto;
+        border-collapse: collapse;
+        word-wrap: break-word;
+        overflow-x: auto;
+    }
+
+    .profile-card img {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid hsl(184, 35%, 57%);
+        margin-bottom: 15px;
+        box-shadow: 0px 0px 15px #8cd5d6;
+    }
+
+    .profile-card img:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        box-shadow: 0px 0px 25px #56c99b;
+    }
+
+    h2 {
+
+
+        font-size: 1.6rem;
+        color: #00796b;
+        font-weight: 600;
+    }
+
+    .subtitle {
+        color: #6c757d;
+        margin-bottom: 20px;
+    }
+
+    table {
+        margin-top: 10px;
+    }
+
+    tr>th {
+        background-color: #9de2c1 !important;
+        color: #010d10db !important;
+    }
+
+    td {
+        font-size: 1rem !important;
+        background-color: #edfdf5 !important;
+    }
+
+
+    footer {
+        margin-top: 25px;
+        font-size: 14px;
+        color: #555;
+        text-align: center;
+        line-height: 1.6;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding-top: 10px;
+    }
+
+    footer a {
+        color: #38a3a5;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 500px) {
+        .profile-card {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        td {
+            font-size: 14px !important;
+        }
+
+        p.main-subtitle {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 320px) {
+        table {
+            width: 100%;
+            font-size: 12px;
+            overflow-x: auto;
+            display: block;
+        }
+
+        td,
+        th {
+            word-wrap: break-word;
+            padding: 4px;
+        }}
