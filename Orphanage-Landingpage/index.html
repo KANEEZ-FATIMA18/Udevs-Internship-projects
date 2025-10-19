@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hope Haven Orphanage</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-b from-pink-50 to-rose-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav
+    class="fixed top-0 left-0 w-full bg-rose-500 shadow-lg z-50 backdrop-blur-lg bg-opacity-90 transition-all duration-500 ease-in-out">
+    <div class="container mx-auto flex justify-between items-center px-6 py-3">
+      <a href="#home" class="text-white text-2xl font-bold tracking-wide">Hope Haven</a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-8 text-white font-medium">
+        <li><a href="#home" class="hover:text-rose-200 transition-all duration-500 ease-in-out">Home</a></li>
+        <li><a href="#mission" class="hover:text-rose-200 transition-all duration-500 ease-in-out">About / Mission</a>
+        </li>
+        <li><a href="#activities" class="hover:text-rose-200 transition-all duration-500 ease-in-out">Activities</a>
+        </li>
+        <li><a href="#help" class="hover:text-rose-200 transition-all duration-500 ease-in-out">How to Help</a></li>
+      </ul>
+
+      <!-- Mobile Hamburger icon -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-white focus:outline-none transition-all duration-500 ease-in-out">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="md:hidden bg-rose-500/95 text-white text-center space-y-3 py-0 transition-all duration-500 ease-in-out">
+      <a href="#home" class="block py-2 hover:text-rose-200 transition-all duration-500">Home</a>
+      <a href="#mission" class="block py-2 hover:text-rose-200 transition-all duration-500">About / Mission</a>
+      <a href="#activities" class="block py-2 hover:text-rose-200 transition-all duration-500">Activities</a>
+      <a href="#help" class="block py-2 hover:text-rose-200 transition-all duration-500">How to Help</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home"
+    class="h-screen flex flex-col justify-center items-center text-center text-white bg-cover bg-center relative"
+    style="background-image: url('https://images.pexels.com/photos/1153976/pexels-photo-1153976.jpeg?auto=compress&cs=tinysrgb&w=1600');background-blend-mode: multiply;background-color: rgb(83, 80, 80);">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-transparent"></div>
+    <div class="relative z-10 px-6" data-aos="fade-up">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-snug drop-shadow-lg">Welcome to <span
+          class="text-rose-300">Hope Haven</span> Orphanage</h1>
+      <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto drop-shadow-md">A home filled with love, learning, and
+        laughter — nurturing every child's dream for a brighter tomorrow.</p>
+      <a href="#help"
+        class="bg-rose-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-rose-600 hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-500 ease-in-out">Donate
+        Now</a>
+    </div>
+    <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-rose-100/30 to-transparent floating-wave">
+    </div>
+  </section>
+
+
+
+  <!-- Vision & Mission -->
+  <section id="mission" class="relative py-24 bg-gradient-to-b from-rose-50 via-pink-100 to-rose-50 overflow-hidden">
+    <div class="container mx-auto px-6 text-center relative z-10">
+      <h2 class="text-4xl font-extrabold bg-gradient-to-r from-rose-600 to-pink-400 bg-clip-text text-transparent mb-12"
+        data-aos="fade-up">Our Vision & Mission</h2>
+      <div class="grid md:grid-cols-2 gap-10" data-aos="fade-up" data-aos-delay="200">
+        <div
+          class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white/40 hover:-translate-y-2 transition-all duration-500">
+          <h3 class="text-2xl font-semibold mb-3 text-rose-500">Our Vision</h3>
+          <p class="text-gray-600 leading-relaxed">To create a safe, nurturing, and empowering environment for every
+            child
+            — where dreams take flight, and every heart finds hope.</p>
+        </div>
+        <div
+          class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white/40 hover:-translate-y-2 transition-all duration-500">
+          <h3 class="text-2xl font-semibold mb-3 text-rose-500">Our Mission</h3>
+          <p class="text-gray-600 leading-relaxed">We aim to provide education, care, and emotional support to
+            underprivileged children, helping them grow into strong, kind, and confident individuals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Statistics -->
+  <section id="stats" class="py-20 bg-gradient-to-b from-pink-100 via-rose-50 to-pink-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-extrabold bg-gradient-to-r from-rose-600 to-pink-400 bg-clip-text text-transparent mb-12"
+        data-aos="fade-up">Our Family in Numbers</h2>
+      <div class="grid md:grid-cols-3 gap-8" data-aos="fade-up">
+        <div
+          class="bg-white/70 backdrop-blur-md p-10 rounded-2xl shadow-xl hover:scale-105 border border-white/40 transition-all duration-500 ease-in-out">
+          <h3 class="text-4xl font-bold text-rose-500">150+</h3>
+          <p class="mt-2 text-gray-600">Children Supported</p>
+        </div>
+        <div
+          class="bg-white/70 backdrop-blur-md p-10 rounded-2xl shadow-xl hover:scale-105 border border-white/40 transition-all duration-500 ease-in-out">
+          <h3 class="text-4xl font-bold text-rose-500">40</h3>
+          <p class="mt-2 text-gray-600">Staff Members</p>
+        </div>
+        <div
+          class="bg-white/70 backdrop-blur-md p-10 rounded-2xl shadow-xl hover:scale-105 border border-white/40 transition-all duration-500 ease-in-out">
+          <h3 class="text-4xl font-bold text-rose-500">18+</h3>
+          <p class="mt-2 text-gray-600">Years of Service</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities -->
+  <section id="activities" class="py-20 bg-gradient-to-b from-rose-50 via-pink-100 to-rose-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-extrabold bg-gradient-to-r from-rose-600 to-pink-400 bg-clip-text text-transparent mb-12"
+        data-aos="fade-up">Our Activities & Programs</h2>
+      <div class="grid md:grid-cols-3 gap-8" data-aos="fade-up">
+        <div
+          class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-xl hover:-translate-y-2 border border-white/40 transition-all duration-500 ease-in-out">
+          <h3 class="text-xl font-semibold mb-3 text-rose-500">Education</h3>
+          <p class="text-gray-600">We provide learning programs and resources to help children reach their full
+            potential.</p>
+        </div>
+        <div
+          class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-xl hover:-translate-y-2 border border-white/40 transition-all duration-500 ease-in-out">
+          <h3 class="text-xl font-semibold mb-3 text-rose-500">Sports & Creativity</h3>
+          <p class="text-gray-600">Encouraging physical health and creativity through games, art, and music sessions.
+          </p>
+        </div>
+        <div
+          class="bg-white/70 backdrop-blur-md p-8 rounded-2xl shadow-xl hover:-translate-y-2 border border-white/40 transition-all duration-500 ease-in-out">
+          <h3 class="text-xl font-semibold mb-3 text-rose-500">Health & Wellness</h3>
+          <p class="text-gray-600">Regular health check-ups and mental wellness sessions for a balanced lifestyle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How You Can Help -->
+  <section id="help" class="py-20 bg-gradient-to-b from-rose-50 via-pink-100 to-rose-50">
+    <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+      <h2
+        class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-rose-600 to-pink-400 bg-clip-text text-transparent mb-4">
+        How You Can Help</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto text-lg mb-10">Your kindness can light up lives — through donations,
+        volunteering, or spreading awareness. Every little act counts.</p>
+
+      <div class="flex flex-wrap justify-center gap-6 mb-16" data-aos="zoom-in">
+        <a href="#"
+          class="bg-rose-500 text-white px-10 py-3 rounded-full font-semibold shadow-lg hover:shadow-2xl hover:bg-rose-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out">Donate</a>
+        <a href="#"
+          class="border-2 border-rose-500 text-rose-500 px-10 py-3 rounded-full font-semibold hover:bg-rose-500 hover:text-white transform hover:-translate-y-1 transition-all duration-500 ease-in-out">Volunteer</a>
+        <a href="#"
+          class="border-2 border-pink-400 text-pink-500 px-10 py-3 rounded-full font-semibold hover:bg-pink-400 hover:text-white transform hover:-translate-y-1 transition-all duration-500 ease-in-out">Sponsor
+          a Child</a>
+      </div>
+
+      <div class="max-w-2xl mx-auto bg-white/70 backdrop-blur-lg border border-white/40 shadow-2xl p-10 rounded-2xl"
+        data-aos="fade-up">
+        <h3 class="text-2xl font-bold text-rose-600 mb-6">Send Us a Message</h3>
+        <form class="space-y-5">
+          <div class="grid md:grid-cols-2 gap-5">
+            <input type="text" placeholder="Your Name"
+              class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-400 transition-all duration-500 ease-in-out" />
+            <input type="email" placeholder="Your Email"
+              class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-400 transition-all duration-500 ease-in-out" />
+          </div>
+          <textarea rows="4" placeholder="Your Message"
+            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-400 transition-all duration-500 ease-in-out"></textarea>
+          <button type="submit"
+            class="w-full bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold py-3 rounded-full hover:shadow-xl transform hover:-translate-y-1 transition-all duration-500 ease-in-out">Send
+            Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-rose-500 text-white py-12">
+    <div class="container mx-auto px-6 grid md:grid-cols-3 gap-10 text-center md:text-left">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+        <p>123 Hope Street, Karachi</p>
+        <p>+92 300 1234567</p>
+        <p>info@hopehaven.org</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#home" class="hover:text-rose-200 transition-all duration-500">Home</a></li>
+          <li><a href="#mission" class="hover:text-rose-200 transition-all duration-500">Our Mission</a></li>
+          <li><a href="#activities" class="hover:text-rose-200 transition-all duration-500">Programs</a></li>
+          <li><a href="#help" class="hover:text-rose-200 transition-all duration-500">Donate</a></li>
+        </ul>
+      </div>
+      <div>
+        <!-- Footer social icons -->
+        <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+        <div class="flex justify-center md:justify-start gap-6 text-xl">
+          <a href="#" class="hover:text-rose-200 transition-all duration-500">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="hover:text-rose-200 transition-all duration-500">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="hover:text-rose-200 transition-all duration-500">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="hover:text-rose-200 transition-all duration-500">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-8 border-t border-white/30 pt-4 text-sm">
+      &copy; 2025 Hope Haven Orphanage – All Rights Reserved
+    </div>
+  </footer>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
