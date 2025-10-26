@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff Login | Velvet Flame</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="login-card" id="loginCard">
+        <h2>Staff Login</h2>
+        <p>Authorized access only. Please enter your credentials.</p>
+
+        <form id="loginForm">
+            <input type="text" class="form-control mb-3" placeholder="Username" required />
+            <input type="password" class="form-control mb-3" placeholder="Password" required />
+            <button type="submit" class="btn-login w-100 py-2">Login</button>
+        </form>
+    </div>
+
+    <div class="table-main container" id="tableMain" style="display: none;">
+        <h2>Staff Order Management</h2>
+
+        <div class="text-end mb-3">
+            <button class="btn btn-gold me-2" data-bs-toggle="modal" data-bs-target="#addOrderModal">Add Order</button>
+            <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#updateModal">Update Status</button>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-dark table-striped text-center align-middle">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Table No.</th>
+                        <th>Items</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="orderTableBody">
+                    <tr>
+                        <td>#101</td>
+                        <td>3</td>
+                        <td>Steak Deluxe</td>
+                        <td>Preparing</td>
+                    </tr>
+                    <tr>
+                        <td>#102</td>
+                        <td>5</td>
+                        <td>Bruschetta, Pasta</td>
+                        <td>Served</td>
+                    </tr>
+                    <tr>
+                        <td>#103</td>
+                        <td>2</td>
+                        <td>Lava Cake</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+
+    <!-- Add Order Modal -->
+    <div class="modal fade" id="addOrderModal" tabindex="-1" aria-labelledby="addOrderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="addOrderModalLabel">Add New Order</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addOrderForm">
+                        <input type="text" id="orderID" class="form-control mb-3" placeholder="Order ID" required>
+                        <input type="text" id="tableNo" class="form-control mb-3" placeholder="Table Number" required>
+                        <input type="text" id="items" class="form-control mb-3" placeholder="Items (e.g. Pasta, Cake)"
+                            required>
+                        <select id="status" class="form-select mb-3 form-control" required>
+                            <option selected disabled>Status</option>
+                            <option>Preparing</option>
+                            <option>Served</option>
+                            <option>Completed</option>
+                        </select>
+                        <button type="submit" class="btn btn-gold w-100">Save Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Update Status Modal -->
+    <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="updateModalLabel">Update Order Status</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="updateForm">
+                        <input type="text" id="updateOrderID" class="form-control mb-3" placeholder="Order ID" required>
+                        <select id="newStatus" class="form-select mb-3 form-control" required>
+                            <option selected disabled>Choose New Status</option>
+                            <option>Preparing</option>
+                            <option>Served</option>
+                            <option>Completed</option>
+                        </select>
+                        <button type="submit" class="btn btn-gold w-100">Update Status</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script src="login.js"></script>
+</body>
+
+</html>

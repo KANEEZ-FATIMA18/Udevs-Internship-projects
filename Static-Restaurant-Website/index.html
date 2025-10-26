@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velvet Flame | Fine Dining Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Velvet Flame</a>
+            <button class="navbar-toggler text-light border-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">Staff Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Velvet Flame</h1>
+        <p>Where Taste Meets Elegance — indulge in a fine dining experience that awakens your senses.</p>
+        <button onclick="document.querySelector('#menu').scrollIntoView({behavior:'smooth'})">Explore Menu</button>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section container">
+        <h2>Our Signature Menu</h2>
+
+        <!-- Starters -->
+        <div class="menu-category">Starters</div>
+        <div class="row g-4 mt-3">
+            <div class="col-md-4">
+                <div class="card p-2">
+                    <img src="https://i.pinimg.com/1200x/66/13/b8/6613b8989411f98924e4d3c53f13325b.jpg"
+                        alt="Bruschetta">
+                    <div class="card-body">
+                        <h5 class="card-title">Bruschetta</h5>
+                        <p class="card-text">$9.99</p>
+                        <button class="btn btn-order w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-2">
+                    <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80"
+                        alt="Garlic Prawns">
+                    <div class="card-body">
+                        <h5 class="card-title">Garlic Prawns</h5>
+                        <p class="card-text">$12.50</p>
+                        <button class="btn btn-order w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-2">
+                    <img src="https://i.pinimg.com/1200x/18/63/ce/1863cecc61659cae054b8d6aed436122.jpg" alt="Soup Bowl">
+                    <div class="card-body">
+                        <h5 class="card-title">Creamy Mushroom Soup</h5>
+                        <p class="card-text">$8.50</p>
+                        <button class="btn btn-order w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Course -->
+        <div class="menu-category">Main Course</div>
+        <div class="row g-4 mt-3">
+            <div class="col-md-4">
+                <div class="card p-2">
+                    <img src="https://i.pinimg.com/1200x/4f/84/9d/4f849df6550e9e32fa4ad675fec4b244.jpg"
+                        alt="Steak Deluxe">
+                    <div class="card-body">
+                        <h5 class="card-title">Steak Deluxe</h5>
+                        <p class="card-text">$29.99</p>
+                        <button class="btn btn-order w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-2">
+                    <img src="https://i.pinimg.com/736x/50/33/7a/50337a274b4fcc96703efeda1e3d76f6.jpg"
+                        alt="Pasta al Nero">
+                    <div class="card-body">
+                        <h5 class="card-title">Pasta al Nero</h5>
+                        <p class="card-text">$18.50</p>
+                        <button class="btn btn-order w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-2">
+                    <img src="https://i.pinimg.com/1200x/a8/ac/21/a8ac21fd838e87e55e23589a826ecfff.jpg"
+                        alt="Grilled Salmon">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Salmon</h5>
+                        <p class="card-text">$25.00</p>
+                        <button class="btn btn-order w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-category">Desserts</div>
+        <div class="row g-4 mt-3">
+            <div class="col-md-4">
+                <div class="card p-2">
+                    <img src="https://i.pinimg.com/1200x/0c/e1/4e/0ce14e1ef631166a411c20a62f32618f.jpg"
+                        alt="Chocolate Lava Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Lava Cake</h5>
+                        <p class="card-text">$8.99</p>
+                        <button class="btn btn-order w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-2">
+                    <img src="https://i.pinimg.com/736x/f4/de/a3/f4dea3e8cbb21d792ca452be26e88c4a.jpg" alt="Cheesecake">
+                    <div class="card-body">
+                        <h5 class="card-title">Strawberry Cheesecake</h5>
+                        <p class="card-text">$7.99</p>
+                        <button class="btn btn-order w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-2">
+                    <img src="https://i.pinimg.com/736x/9c/74/f6/9c74f621c561e4a5f323465ced98091b.jpg" alt="Tiramisu">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Tiramisu</h5>
+                        <p class="card-text">$9.50</p>
+                        <button class="btn btn-order w-100">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Velvet Flame. All rights reserved.</p>
+        <p>Contact us: <a href="#">info@velvetflame.com</a> | Follow us on
+            <a href="#">Instagram</a> • <a href="#">Facebook</a> • <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
