@@ -29,49 +29,150 @@
   </div>
 
   <!-- Table Section -->
-  <div class="table-main container" id="tableMain" style="display: none;" data-aos="fade-up" data-aos-duration="1000">
-    <h2>Staff Order Management</h2>
+  <section class="container-fluid table-main tableMain" style="display: none;">
+    <h2 class="text-center mt-4 mb-3" style="font-family: 'Playfair Display', serif; color: #d4af37;">
+      Staff Order Management
+    </h2>
 
-    <div class="text-end mb-3" data-aos="fade-up" data-aos-delay="200">
-      <button class="btn btn-gold me-2" data-bs-toggle="modal" data-bs-target="#addOrderModal">Add Order</button>
-      <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#updateModal">Update Status</button>
+    <div class="container rounded-4 p-4 p-lg-0"
+      style="background-color: #0d0d0d; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);">
+      <div class="text-end mb-3" data-aos="fade-up" data-aos-delay="200" id="addOrderModal">
+        <button class="btn px-4 py-2" id="addOrderModal" style="background-color: #d4af37; color: #0d0d0d; font-weight: 600; border: none; border-radius: 8px; 
+               transition: 0.3s; box-shadow: 0 4px 10px rgba(212,175,55,0.4);">
+          Add Order
+        </button>
+      </div>
+
+      <div class="table-container p-2 rounded shadow-sm" style="
+           background-color: #111;
+           border: 1px solid rgba(212,175,55,0.3);
+           white-space: nowrap;
+           overflow-x: auto;
+           scrollbar-width: none; /* Firefox hide */
+         ">
+        <style>
+          /* Hide scrollbar until needed */
+          .table-container::-webkit-scrollbar {
+            height: 8px;
+          }
+
+          .table-container::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 10px;
+          }
+
+          .table-container::-webkit-scrollbar {
+            display: none;
+          }
+
+          .table-container:hover::-webkit-scrollbar {
+            display: block;
+          }
+        </style>
+
+        <table class="table table-hover align-middle text-center mb-0"
+          style="min-width: 768px; background-color: #5d1e1e; color: #fff; border-radius: 12px; overflow: hidden;">
+          <thead style="background-color: #d4af37!important; color: #0d0d0d; font-family: 'Poppins', sans-serif;">
+            <tr>
+              <th>Order ID</th>
+              <th>Customer</th>
+              <th>Items</th>
+              <th>Status</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#001</td>
+              <td>
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                  <img src="https://i.pravatar.cc/40?img=11" alt="" class="rounded-circle shadow" width="40"
+                    height="40">
+                  <div class="fw-bold mb-0 text-dark-emphasis">Ayesha Khan</div>
+                </div>
+              </td>
+              <td>Spicy Chicken Burger</td>
+              <td><span class="badge px-3 py-2" style="background-color: #28a745; border-radius: 8px;">Delivered</span>
+              </td>
+              <td>
+                <button class="btn btn-sm px-3 py-1" data-bs-toggle="modal" data-bs-target="#updateModal"
+                  style="background-color: #d4af37; color: #0d0d0d; border-radius: 8px; font-weight: 600; transition: 0.3s;">
+                  Edit
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>#002</td>
+              <td>
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                  <img src="https://i.pravatar.cc/40?img=15" alt="" class="rounded-circle shadow" width="40"
+                    height="40">
+                  <div class="fw-bold mb-0 text-dark-emphasis">Ali Raza</div>
+                </div>
+              </td>
+              <td>Double Beef Blast</td>
+              <td><span class="badge text-dark px-3 py-2"
+                  style="background-color: #ffc107; border-radius: 8px;">Pending</span></td>
+              <td>
+                <button class="btn btn-sm px-3 py-1" data-bs-toggle="modal" data-bs-target="#updateModal"
+                  style="background-color: #d4af37; color: #0d0d0d; border-radius: 8px; font-weight: 600;">
+                  Edit
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>#003</td>
+              <td>
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                  <img src="https://i.pravatar.cc/40?img=7" alt="" class="rounded-circle shadow" width="40" height="40">
+                  <div class="fw-bold mb-0 text-dark-emphasis">Zara Sheikh</div>
+                </div>
+              </td>
+              <td>Veggie Delight</td>
+              <td><span class="badge px-3 py-2" style="background-color: #28a745; border-radius: 8px;">Delivered</span>
+              </td>
+              <td>
+                <button class="btn btn-sm px-3 py-1" data-bs-toggle="modal" data-bs-target="#updateModal"
+                  style="background-color: #d4af37; color: #0d0d0d; border-radius: 8px; font-weight: 600;">
+                  Edit
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>#004</td>
+              <td>
+                <div class="d-flex align-items-center gap-3 flex-wrap">
+                  <img src="https://i.pravatar.cc/40?img=13" alt="" class="rounded-circle shadow" width="40"
+                    height="40">
+                  <div class="fw-bold mb-0 text-dark-emphasis">Maria Noor</div>
+                </div>
+              </td>
+              <td>Egg N’ Cheese</td>
+              <td><span class="badge text-dark px-3 py-2"
+                  style="background-color: #ffc107; border-radius: 8px;">Pending</span></td>
+              <td>
+                <button class="btn btn-sm px-3 py-1" data-bs-toggle="modal" data-bs-target="#updateModal"
+                  style="background-color: #d4af37; color: #0d0d0d; border-radius: 8px; font-weight: 600;">
+                  Edit
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <a href="index.html" data-aos="fade-up" data-aos-delay="400" style="text-decoration: none;"><button
+          class="back-link"
+          style="background-color: #d4af37; color: #0d0d0d; padding: 10px 15px;border-radius: 10px;font-weight: bold;border: none;">Back
+          to Home</button></a>
     </div>
+  </section>
 
-    <div class="table-responsive" data-aos="fade-up" data-aos-delay="300">
-      <table class="table table-dark table-striped text-center align-middle">
-        <thead>
-          <tr>
-            <th>Order ID</th>
-            <th>Table No.</th>
-            <th>Items</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody id="orderTableBody">
-          <tr>
-            <td>#101</td>
-            <td>3</td>
-            <td>Steak Deluxe</td>
-            <td>Preparing</td>
-          </tr>
-          <tr>
-            <td>#102</td>
-            <td>5</td>
-            <td>Bruschetta, Pasta</td>
-            <td>Served</td>
-          </tr>
-          <tr>
-            <td>#103</td>
-            <td>2</td>
-            <td>Lava Cake</td>
-            <td>Completed</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
 
-    <a href="index.html" class="back-link" data-aos="fade-up" data-aos-delay="400">← Back to Home</a>
-  </div>
+
+
 
   <!-- Add Order Modal -->
   <div class="modal fade" id="addOrderModal" tabindex="-1" aria-labelledby="addOrderModalLabel" aria-hidden="true">
@@ -123,12 +224,14 @@
     </div>
   </div>
 
+
+
   <script src="login.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
       duration: 1000,
-      
+
     });
   </script>
 </body>

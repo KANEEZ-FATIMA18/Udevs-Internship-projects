@@ -73,7 +73,7 @@ p {
     color: #000;
     border: none;
     font-weight: 600;
-    border-radius: 25px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 
@@ -84,7 +84,7 @@ p {
 }
 
 .btn-gold {
-    padding: 8px 18px;
+    padding: 8px 15px;
 }
 
 

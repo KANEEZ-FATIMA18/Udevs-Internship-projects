@@ -1,6 +1,6 @@
     const loginForm = document.getElementById("loginForm");
         const loginCard = document.getElementById("loginCard");
-        const tableMain = document.getElementById("tableMain");
+        const tableMain = document.querySelector(".tableMain");
 
         loginForm.addEventListener("submit", (e) => {
             e.preventDefault();
