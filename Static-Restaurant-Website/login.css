@@ -31,6 +31,10 @@ body {
     margin-top: 30px;
 }
 
+input::placeholder{
+    color: #939090 !important;
+
+}
 .login-card:hover {
     box-shadow: 0 0 35px rgba(212, 175, 55, 0.25);
     transform: translateY(-3px);
